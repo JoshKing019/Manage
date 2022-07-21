@@ -11,6 +11,7 @@ to select class use (.)
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 a{
@@ -18,7 +19,6 @@ a{
 }
 
 #nav{
-    background-color: gray;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -27,11 +27,15 @@ a{
     padding-top: 10px;
     padding-bottom: 10px; */
 
-    padding: 20px 50px;
+    padding: 20px 100px;
+}
+
+#nav a{
+    font-weight: 600;
 }
 
 .navLinks a{
-    padding: 0 20px;
+    padding:0 20px;
     color: #242d52;
 }
 
@@ -41,3 +45,134 @@ a{
     padding: 10px 20px;
     color: white;
 }
+
+#main-section{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 100px;
+}
+
+.mainsectionleft{
+    width: 35%;
+}
+
+.mainsectionleft h1{
+    color: #242d52;
+    font-size: 40px;
+}
+
+.mainsectionleft p{
+    color: hsl(227, 12%, 61%);
+    padding-top: 30px;
+    margin-bottom: 18px;
+}
+
+.mainsectionleft a{
+    color: #ffffff;
+    background-color: #f3603c;
+    padding: 10px 16px;
+    border-radius: 50px;
+}
+
+.bgimg img{
+    width: 80%;
+}
+
+#main-second{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 100px;
+}
+
+.leftmainseconddiv{
+    width: 40%;
+}
+
+.leftmainseconddiv h1{
+    color: #242d52;
+    font-size: 40px;
+    margin-bottom:10px ;
+}
+
+.leftmainseconddiv p{
+    color: hsl(227, 12%, 61%);
+}
+
+.rightmainseconddiv{
+    width:40%;
+}
+
+.numandtext{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.numandtext p{
+    background-color: #f3603c;
+    color: #ffffff;
+    padding: 2px 16px;
+    border-radius: 20px;
+}
+
+.rightmainsecondp{
+    color: hsl(227, 12%, 61%);
+    margin-top: 10px;
+    margin-left: 58px;
+    font-size: 14px;
+}
+
+.numandtext h3{
+    color: #242d52;
+}
+
+
+#testimonialsection{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.testimonialcard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 70px;
+    padding: 0 16px;
+}
+
+
+.testimonialheader{
+    color: #242d52;
+    font-size: 20px;
+}
+
+.testimonialcard h3{
+    color: #242d52;
+    margin: 10px 0;
+}
+
+.testimonialcard div{
+    padding: 10px 25px;
+    background-color: #FAFAFA;
+    position: relative;
+    border-radius: 10px;
+}
+
+.testimonialcard img{
+    width: 20%;
+    position: absolute;
+    left: 50%;
+    top: -7%;
+    transform: translate(-50%, -50%);
+}
+
+.testimonialcard p{
+    color: hsl(227, 12%, 61%);
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+
