@@ -14,6 +14,12 @@ to select class use (.)
     font-family: 'Poppins', sans-serif;
 }
 
+html,body{
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+}
+
 a{
     text-decoration: none;
 }
@@ -22,12 +28,13 @@ a{
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     /* padding-right: 50px;
     padding-left: 50px;
     padding-top: 10px;
     padding-bottom: 10px; */
 
-    padding: 20px 100px;
+    padding: 30px 100px;
 }
 
 #nav a{
@@ -35,11 +42,12 @@ a{
 }
 
 .navLinks a{
-    padding:0 20px;
+    padding:0 10px;
     color: #242d52;
+    font-size: 15px;
 }
 
-.getStartedBtn a{
+.getStartedBtn{
     background-color: #f3603c;
     border-radius: 20px;
     padding: 10px 20px;
@@ -59,24 +67,29 @@ a{
 
 .mainsectionleft h1{
     color: #242d52;
-    font-size: 40px;
+    font-size: 45px;
 }
 
 .mainsectionleft p{
     color: hsl(227, 12%, 61%);
-    padding-top: 30px;
-    margin-bottom: 18px;
+    padding-top: 35px;
+    margin-bottom: 15px;
+    padding-bottom: 20px;
+    width: 80%;
 }
 
 .mainsectionleft a{
     color: #ffffff;
     background-color: #f3603c;
-    padding: 10px 16px;
+    padding: 12px 18px;
     border-radius: 50px;
+    font-size: 14px;
+    font-weight: bold;
 }
 
-.bgimg img{
-    width: 80%;
+.bgimg{
+    width: 40%;
+    padding-left: 0;
 }
 
 #main-second{
@@ -131,6 +144,7 @@ a{
 #testimonialsection{
     text-align: center;
     margin-top: 20px;
+    padding-bottom: 60px;
 }
 
 .testimonialcard{
@@ -140,12 +154,14 @@ a{
     gap: 20px;
     margin-top: 70px;
     padding: 0 16px;
+    padding-bottom: 50px;
 }
 
 
 .testimonialheader{
     color: #242d52;
-    font-size: 20px;
+    font-size: 15px;
+    padding: 40px 0;
 }
 
 .testimonialcard h3{
@@ -174,5 +190,323 @@ a{
     font-weight: 500;
     margin-top: 20px;
 }
+
+#testimonialsection a{
+    color: white;
+    background-color: #f3603c;
+    padding: 10px 20px;
+    border-radius: 40px;
+    font-size: 15px;
+  
+}
+#smartmove{
+    background-color: #FF4213;
+    padding: 40px 150px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.smartmove1{
+    color: #ffffff;
+    font-size: 23px;
+    width: 45%;
+}
+
+.smart a{
+    color: #f3603c;
+    padding: 16px 25px;
+    background-color: #ffffff;
+    border-radius: 50px;
+}
+
+#themain{
+    background-color: #1D1E25;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 50px;
+    width: 100%;
+}
+
+.links3{
+    text-align: center;
+}
+
+.links1, .links2{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.links1 a, .links2 a{
+    color: #ffffff;
+    margin: 3px 0;
+}
+
+.last{
+    display: flex; 
+    gap: 10px;
+}
+
+.pclass{
+    background-color: #F25F3A;
+    padding: 6px 21px;
+    border-radius: 50px;
+    color: #ffffff;
+    font-size:13px;
+    cursor: pointer;
+    border: none;
+}
+
+input[type="email"]{
+    border-radius: 50px;
+    padding: 6px 21px;
+    border: none;
+}
+
+.bottomLinks{
+    display: flex;
+    gap: 15rem;
+}
+
+.links1 a:hover{
+    color: #F25F3A;
+}
+
+.pclass:hover{
+    box-shadow: 2px 2px 5px rgb(138, 138, 138);
+}
+
+.navLinks a:hover{
+    color: gray;
+}
+
+.links2 a:hover{
+    color:#F25F3A;
+}
+
+.getStartedBtn:hover{
+    box-shadow: 4px 5px 10px gray ;
+
+}
+
+.mainsectionleft a:hover{
+    box-shadow:4px 5px 12px gray ;
+}
+
+.smart a:hover{
+    box-shadow: 5px 5px 10px gray;
+}
+
+#testimonialsection a:hover{
+    box-shadow: 4px 5px 10px gray;
+}
+
+.links3 p{
+    font-size: 12px;
+    padding-top: 27px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+
+.person:hover{
+    box-shadow: 2px 2px 10px rgb(201, 201, 201);
+}
+
+.logaicon{
+    
+    display: flex;
+    gap: 10px;
+    padding-top: 50px;
+    font-size: 23px;
+}
+
+.logaicon a{
+    color: #ffffff;
+}
+
+.p2{
+    display: none;
+}
+
+@media screen and (max-width:1200px) {
+    .mainsectionleft{
+        width: 50%;
+    }
+}
+
+
+@media screen and ( max-width:992px) {
+    .bgimg{
+        position: relative;
+        right: -30px;
+        width: 50%;
+    }
+
+    .smartmove1 h1{
+        font-size: 18px;
+    }
+
+    #smartmove{
+        padding: 40px 70px;
+    }
+
+    #themain{
+        flex-direction: column-reverse;
+    }
+
+    .image{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: -40px;
+        gap: 20px;
+    }
+
+    .bottomLinks{
+        gap: 7rem;
+        margin: 1.5rem 0;
+    }
+    .mainsectionleft h1{
+        font-size:35px ;
+    }
+    .leftmainseconddiv h1{
+        font-size: 25px;
+    }
+
+    .p1{
+        display: none;
+    }
+
+    .p2{
+        display: block;
+        position: absolute;
+        color: #fff;
+        bottom: 0;
+    }
+}
+
+@media screen and ( max-width:768px) {
+    .leftmainseconddiv h1{
+        font-size: 24px;
+    }
+
+    .mainsectionleft h1{
+        font-size: 30px;
+    }
+
+    .smartmove1 h1{
+        font-size: 18px;
+    }
+
+    #smartmove{
+        padding: 40px 70px;
+    }
+    #main-section{
+        padding: 40px; 
+    }
+    #main-second{
+        padding: 40px;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .rightmainseconddiv{
+        width: 50%;
+    }
+}
+@media screen and ( max-width:576px) {
+        #main-section{
+            flex-direction: column-reverse;
+    }
+    .bgimg{
+        width: 100%;
+    }
+    .mainsectionleft h1{
+        font-size: 35px;
+    }
+    .mainsectionleft{
+        text-align: center;
+        width: 70%;
+    }
+    .mainsectionleft p{
+        padding-left: 40px;
+        width: 90%;
+    }
+    #main-second{
+        flex-direction:column;
+        margin-right: auto;
+        margin-left: auto;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .leftmainseconddiv{
+        width: 80%;
+        text-align: center;
+    }
+    .rightmainseconddiv{
+        width: 100%;
+    }
+    .leftmainseconddiv h1{
+        font-size: 34px;
+    }
+
+    .numandtext{
+        background-color:#FFF0EC;
+    }
+    .image{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .logaicon{
+        padding-bottom: 35px;
+    }
+    #smartmove{
+        flex-direction: column;
+    }
+    .smartmove1 h1{
+        padding-bottom: 75px;
+        text-align: center;
+        justify-content: center;
+        font-size:30px;
+    }
+    .smart{
+        padding-bottom: 20px;
+    }
+    }
+    
+@media screen and ( max-width:375px) {
+    .mainsectionleft h1{
+         font-size: 32px;
+         padding-bottom: 10px;
+         padding-top: 10px;
+    }
+    .numandtext{
+        font-size: 12px;
+    }
+    .rightmainsecondp{
+        font-size: 12px;
+    }
+    .smartmove1 h1{
+        font-size: 18px;
+    }
+    #smartmove{
+        padding: 40px 40px;
+    }
+    .leftmainseconddiv h1{
+        font-size:28px ;
+        padding-bottom: 10px;
+    }
+    .leftmainseconddiv p{
+        font-size: 11px;
+    }
+    .mainsectionleft{
+        width: 97%;
+    }
+    }
+
+    
 
 
