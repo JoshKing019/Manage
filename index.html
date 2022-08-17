@@ -9,16 +9,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/owlcarousel.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 
 <body>
     <section id="nav">
+        <a class="josh12" href="">
+            <img src="/images/logo.svg" alt="">
+        </a>
 
-        <div>
-            <a href="">
-                <img src="/images/logo.svg" alt="">
-            </a>
+        <div class="navToggler">
+            <i class="ri-menu-line"></i>
+            <i class="ri-close-line"></i>    
         </div>
 
         <div class="navLinks">
@@ -29,8 +33,8 @@
             <a href="">Community</a>
         </div>
 
-        <div>
-            <a href="" class="getStartedBtn">Get Started</a>
+        <div class="getStartedBtn">
+            <a href="" >Get Started</a>
         </div>
 
     </section>
@@ -101,39 +105,43 @@
         </div>
 
         <div class="testimonialcard">
-            <div class="person">
-                <img src="/images/avatar-ali.png" alt="">
-                <h3>Ali Bravo</h3>
-                <p>
-                    "We have been able to cancel so many other subscription since using Manage. There is no
-                     more cross-channel confusion and everyone is much more focused."
-                </p>
+            <div class="twoperson">
+                <div class="person">
+                    <img src="/images/avatar-ali.png" class="personImg" alt="">
+                    <h3>Ali Bravo</h3>
+                    <p>
+                        "We have been able to cancel so many other subscription since using Manage. There is no
+                         more cross-channel confusion and everyone is much more focused."
+                    </p>
+                </div>
+    
+                <div class="person">
+                    <img src="/images/avatar-richard.png" class="personImg" alt="">
+                    <h3>Richard Watts</h3>
+                    <p>
+                        "Manage allows us to provide structure and process.it keeps us organized and focused. i can't stop recommeding
+                         to everyone i talk."
+                    </p>
+                </div>
             </div>
 
-            <div class="person">
-                <img src="/images/avatar-richard.png" alt="">
-                <h3>Richard Watts</h3>
-                <p>
-                    "Manage allows us to provide structure and process.it keeps us organized and focused. i can't stop recommeding
-                     to everyone i talk."
-                </p>
-            </div>
-
-            <div class="person">
-                <img src="/images/avatar-shanai.png" alt="">
-                <h3>Shanai Gough</h3>
-                <p>Their software allows us to track,manage and collaborate on our projects from anywhere. 
-                    it keeps the whole team in-sync without being intrusive."
-                </p>
-            </div>
-
-            <div class="person">
-                <img src="/images/avatar-anisha.png" alt="">
-                <h3>Anisha Li</h3>
-                <p>
-                    "Manage has supercharged our team's workflow, they help maintain visibility on larger
-                    milestones at all times. Keeps everyone motivated."
-                </p>
+            <div class="twoperson">
+                <div class="person">
+                    <img src="/images/avatar-shanai.png" class="personImg" alt="">
+                    <h3>Shanai Gough</h3>
+                    <p>Their software allows us to track,manage and collaborate on our projects from anywhere. 
+                        it keeps the whole team in-sync without being intrusive."
+                    </p>
+                </div>
+    
+                <div class="person">
+                    <img src="/images/avatar-anisha.png" class="personImg" alt="">
+                    <h3>Anisha Li</h3>
+                    <p>
+                        "Manage has supercharged our team's workflow, they help maintain visibility on larger
+                        milestones at all times. Keeps everyone motivated."
+                    </p>
+                </div>
             </div>
         </div>
 
@@ -196,6 +204,9 @@
         </div>
         <p class="p2">Copyright &copy; 2020. All Rights Reserved</p>
     </section>
-
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+    <script src="/js/main.js"></script>
 </body>
 </html>

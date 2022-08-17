@@ -47,7 +47,7 @@ a{
     font-size: 15px;
 }
 
-.getStartedBtn{
+.getStartedBtn a{
     background-color: #f3603c;
     border-radius: 20px;
     padding: 10px 20px;
@@ -151,7 +151,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    /* gap: 20px; */
     margin-top: 70px;
     padding: 0 16px;
     padding-bottom: 50px;
@@ -171,17 +171,18 @@ a{
 
 .testimonialcard div{
     padding: 10px 25px;
-    background-color: #FAFAFA;
+    /* background-color: #FAFAFA; */
     position: relative;
     border-radius: 10px;
 }
 
-.testimonialcard img{
-    width: 20%;
-    position: absolute;
-    left: 50%;
-    top: -7%;
-    transform: translate(-50%, -50%);
+.twoperson{
+    display: flex;
+    gap: 10px;
+}
+
+.personImg{
+    width: 30%;
 }
 
 .testimonialcard p{
@@ -236,7 +237,6 @@ a{
 .links1, .links2{
     display: flex;
     flex-direction: column;
-
 }
 
 .links1 a, .links2 a{
@@ -315,6 +315,11 @@ input[type="email"]{
     box-shadow: 2px 2px 10px rgb(201, 201, 201);
 }
 
+.person{
+    /* width: 25%; */
+    background-color:#FAFAFA;
+}
+
 .logaicon{
     
     display: flex;
@@ -330,6 +335,20 @@ input[type="email"]{
 .p2{
     display: none;
 }
+ .ri-close-line{
+    font-size: 35px;
+ }
+
+ .smallboy{
+    display: flex;
+    justify-content: space-between;
+ }
+
+.navToggler{
+    display: none;
+}
+
+
 
 @media screen and (max-width:1200px) {
     .mainsectionleft{
@@ -339,10 +358,19 @@ input[type="email"]{
 
 
 @media screen and ( max-width:992px) {
+
+    #nav{
+        padding: 30px 50px;
+    }
+
     .bgimg{
         position: relative;
         right: -30px;
         width: 50%;
+    }
+
+    .testimonialcard{
+        flex-direction: column;
     }
 
     .smartmove1 h1{
@@ -386,6 +414,62 @@ input[type="email"]{
         bottom: 0;
     }
 }
+@media screen and ( max-width:840px){
+      /* #nav{
+        width: 100%;
+        font-size: 12px;
+        margin: 3px;
+      } */
+      #main-section{
+        width: 100%;
+        font-size: 13px;
+        padding:40px 70px;
+      }
+      .navLinks a{
+        font-size: 12px;
+      }
+
+      .josh12{
+        /* width: 20%; */
+        font-size: 10px;
+      }
+
+      .getStartedBtn{
+        display: none;
+    }
+    
+    .navToggler{
+        display: block;
+        font-size: 1.5rem;
+    }
+    
+    .ri-close-line{
+        display: none;
+    }
+    
+    .navLinks{
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: -7%;
+        transition: .5s;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        background-color: #999999;
+        padding: 50px 60px;
+        width: 250px;
+        border-radius: 15px;
+        margin: 50px;
+        gap: 15px;
+    }
+}
+
+
+
+
+
 
 @media screen and ( max-width:768px) {
     .leftmainseconddiv h1{
@@ -442,6 +526,15 @@ input[type="email"]{
         width: 100%;
     }
 
+    .rightmainsecondp{
+        margin-left: 0;
+    }
+
+    .twoperson{
+        flex-direction: column;
+        /* gap: 10px; */
+    }
+
     .leftmainseconddiv{
         width: 80%;
         text-align: center;
@@ -465,6 +558,9 @@ input[type="email"]{
     }
     #smartmove{
         flex-direction: column;
+    }
+    .smartmove1{ 
+        width: 100%;
     }
     .smartmove1 h1{
         padding-bottom: 75px;
